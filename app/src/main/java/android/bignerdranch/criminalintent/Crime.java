@@ -1,6 +1,5 @@
 package android.bignerdranch.criminalintent;
 
-import java.util.Calendar;
 import java.util.Date;
 import java.util.UUID;
 
@@ -9,7 +8,6 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
-    private Calendar cal;
 
     public Crime() {
         mId = UUID.randomUUID();
