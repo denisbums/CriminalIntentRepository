@@ -122,6 +122,7 @@ public class CrimeListFragment extends Fragment {
         }else{
            // if(mIdRefresh != null)
             //    mAdapter.notifyItemChanged(crimes.indexOf(crimeLab.getCrime(mIdRefresh)));
+                mAdapter.setCrimes(crimes);
                 mAdapter.notifyDataSetChanged();
 //            if(mId != null)
 //                mAdapter.notifyItemChanged(crimes.indexOf(crimeLab.getCrime(mId)));
@@ -200,6 +201,10 @@ public class CrimeListFragment extends Fragment {
         @Override
         public int getItemCount() {
             return mCrimes.size();
+        }
+
+        public void setCrimes(List<Crime> crimes) {
+            mCrimes = crimes;
         }
     }
 }
