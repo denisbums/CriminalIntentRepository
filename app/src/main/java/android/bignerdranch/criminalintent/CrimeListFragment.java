@@ -112,7 +112,8 @@ public class CrimeListFragment extends Fragment {
 //            mIdRefresh = (UUID)data.getSerializableExtra("return");
 //     //   Toast.makeText(getActivity(), "return intent: "+data.getSerializableExtra("return").toString(), Toast.LENGTH_SHORT).show();
 //    }
-
+//
+    //
     private void updateUI() {
         CrimeLab crimeLab = CrimeLab.get(getActivity());
         List<Crime> crimes = crimeLab.getCrimes();
